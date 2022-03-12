@@ -75,12 +75,28 @@ header a
     font-size:20px;
     padding-left:20px;
 }
-header a: hover{
-  background-color: white;
-}
+
 
 header ul
 {
     list-style-type: none;
 }
 
+/*CAROUSEL*/
+
+.carousel{
+  width:50%;
+  height:auto;
+  margin-left:25%;
+  margin-top: 10px;
+  text-align:center;
+  border-radius: 300px;
+}
+.carousel div{
+  margin-top: 10px;
+}
+
+body{
+  text-align: center;
+  background-color: rgb(150, 145, 145);
+}

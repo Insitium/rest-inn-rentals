@@ -1,0 +1,42 @@
+npx{
+    "properties": 
+    [
+      { 
+
+        "id" : 184845,
+        "title" : "Toronto Lovers Island",
+        "price" : 1.00,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort1.webp",
+        "featured" : true
+      },
+      { 
+
+        "id" : 29848484,
+        "title" : "Brampton Special Condos",
+        "price" : 18.50,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort2.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 3384848,
+        "title" : "Trinidad and Tobago Island Life Apartments",
+        "price" : 250,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort3.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 4,
+        "title" : "Netflix and Chill House",
+        "price" : 1089.50,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
+        "featured" : false
+      }
+
+    ]
+}
+
+
+
+
