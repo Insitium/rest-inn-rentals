@@ -7,6 +7,7 @@ const PropertyType = () => {
   // my state
   const [properties , setProperties] = useState([{
     id:0,
+    type:"",
     title:"",
     price: 0,
     imageSrc : null
@@ -16,7 +17,7 @@ const PropertyType = () => {
   useEffect(()=>{
 
     const URL = 'http://localhost:5000/properties'
-    //MAKE AN AJAX request
+    // AJAX request
 
     fetch(URL)
     .then(response=>response.json())
@@ -36,13 +37,11 @@ const PropertyType = () => {
           <h1>Property Type</h1>
 
           <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">
-
-          {properties.map(resort=>( <PropertyItem id={resort.id} title={resort.title} image ={resort.img} price={resort.price} />))}
+          {properties.filter((property)=>{
+            return property.id<=4;
+        }).map(property=>( <PropertyItem id={property.id} key={property.id} type={property.type} title={property.title} image ={property.img} price={property.price}  />))}
           
               
-    
-            
-  
   
           </div>
 

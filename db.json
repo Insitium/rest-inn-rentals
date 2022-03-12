@@ -1,35 +1,83 @@
-npx{
+{
     "properties": 
     [
       { 
 
-        "id" : 184845,
-        "title" : "Toronto Lovers Island",
-        "price" : 1.00,
+        "id" : 1,
+        "type": "Apartments",
+        "title" : "King Street",
+        "price" : 1000,
+        "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort1.webp",
         "featured" : true
       },
       { 
 
-        "id" : 29848484,
-        "title" : "Brampton Special Condos",
-        "price" : 18.50,
+        "id" : 2,
+        "type":"Resorts",
+        "title" : "Blue Mountain",
+        "price" : 200,
+        "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort2.webp",
         "featured" : false
       },
       { 
 
-        "id" : 3384848,
-        "title" : "Trinidad and Tobago Island Life Apartments",
-        "price" : 250,
+        "id" : 3,
+        "type":"Condos",
+        "title" : "Greater Noida",
+        "price" : 100,
+        "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort3.webp",
         "featured" : false
       },
       { 
 
         "id" : 4,
-        "title" : "Netflix and Chill House",
-        "price" : 1089.50,
+        "type":"Hotels",
+        "title" : "Vancouver",
+        "price" : 150,
+        "bestSeller": true,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 5,
+        "type":"Apartments",
+        "title" : "Waterloo",
+        "price" : 110,
+        "bestSeller": false,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 6,
+        "type":"resorts",
+        "title" : "Halifax",
+        "price" : 150,
+        "bestSeller": true,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 7,
+        "type":"Condos",
+        "title" : "Winnepeg",
+        "price" : 200,
+        "bestSeller": false,
+        "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
+        "featured" : false
+      },
+      { 
+
+        "id" : 8,
+        "type":"Hotels",
+        "title" : "Montreal",
+        "price" : 250,
+        "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false
       }

@@ -100,3 +100,47 @@ body{
   text-align: center;
   background-color: rgb(150, 145, 145);
 }
+.property-card 
+{
+    
+    border-radius: 20px;
+    border: 1px solid #fcf7f7;
+    box-shadow: 0 2px 8px rgba(87, 80, 80, 0.1);
+    background-color: rgb(238, 228, 228);
+    overflow: hidden;
+}
+
+.property-card img 
+{
+    
+    object-fit: cover;
+    height:300px;
+    cursor: pointer ;
+    transition:  transform .30s visibility .30s ease-in;
+
+}
+
+.property-card:hover img
+{
+    transform: scale(1.5);
+}
+.propertyContent{
+  padding:0px 16px
+}
+
+.propertyContent h3
+{
+  margin-bottom: 7px;
+}
+#section-property-list
+{
+    margin-bottom: 35px;
+}
+#section-property-list h1 , 
+#about-section h1 , 
+#login-section h1 , 
+#register-section h1
+{
+    margin:16px 0;
+
+}
