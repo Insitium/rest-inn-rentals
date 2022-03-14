@@ -9,9 +9,12 @@ const PropertyType = () => {
     id:0,
     type:"",
     title:"",
+    location:"",
     bestSeller:false,
     price: 0,
-    imageSrc : null
+    imageSrc : null,
+    rules:"",
+    amenities:""
   }]);
 
 
@@ -38,10 +41,11 @@ const PropertyType = () => {
           <h1>Best Seller</h1>
 
           <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">
+   
           {properties.filter((property)=>{
             return property.bestSeller===true;
-        }).map(property=>( <BestSellerItem id={property.id} key={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price}  />))}
-          
+        }).map(property=>( <BestSellerItem id={property.id} key={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price} location={property.location} amenities={property.amenities} rules={property.rules}  />))}
+     
               
   
           </div>

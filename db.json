@@ -6,7 +6,10 @@
         "id" : 1,
         "type": "Apartments",
         "title" : "King Street",
+        "location":"Bay Street",
         "price" : 1000,
+        "amenities":"Pool",
+        "Rules":"No parties",
         "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort1.webp",
         "featured" : true
@@ -15,7 +18,10 @@
         "id" : 2,
         "type":"Resorts",
         "title" : "Blue Mountain",
+        "location":"Bloor Street",
         "price" : 200,
+        "amenities":"Laundry",
+        "Rules":"No cooking",
         "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort2.webp",
         "featured" : false
@@ -25,7 +31,10 @@
         "id" : 3,
         "type":"Condos",
         "title" : "Greater Noida",
+        "location":"Wellesley Street",
         "price" : 100,
+        "amenities":"Garage",
+        "Rules":"No Guests Allowed",
         "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort3.webp",
         "featured" : false
@@ -35,7 +44,10 @@
         "id" : 4,
         "type":"Hotels",
         "title" : "Vancouver",
+        "location":"Spadina Street",
         "price" : 150,
+        "amenities":"Gym",
+        "Rules":"Silence Area",
         "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false
@@ -45,7 +57,10 @@
         "id" : 5,
         "type":"Apartments",
         "title" : "Waterloo",
+        "location":"St Claire Street",
         "price" : 110,
+        "amenities":"Free Food",
+        "Rules":"No Rules",
         "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false
@@ -53,9 +68,12 @@
       { 
 
         "id" : 6,
-        "type":"resorts",
+        "type":"Resorts",
         "title" : "Halifax",
+        "location":"Wellesley Street",
         "price" : 150,
+        "amenities":"Furnished Kitchen",
+        "Rules":"No Car Parking",
         "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false
@@ -65,7 +83,10 @@
         "id" : 7,
         "type":"Condos",
         "title" : "Winnepeg",
+        "location":"Yonge Street",
         "price" : 200,
+        "amenities":"Temperature Control",
+        "Rules":"No entry after 10",
         "bestSeller": false,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false
@@ -75,7 +96,10 @@
         "id" : 8,
         "type":"Hotels",
         "title" : "Montreal",
+        "location":"College Street",
         "price" : 250,
+        "amenities":"In house Bar",
+        "Rules":"Free Wifi",
         "bestSeller": true,
         "img" : "https://resort-destination-app.s3.us-east-2.amazonaws.com/resort4.webp",
         "featured" : false

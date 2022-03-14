@@ -5,9 +5,7 @@ import { Button,Form, Nav,Navbar,Container,NavDropdown,FormControl } from 'react
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
 
-    const submitCheck = (event) => {
-        event.preventDefault();
-      }
+    
   return(
       <div className='Container'>
       <Navbar bg="light" expand="lg">
