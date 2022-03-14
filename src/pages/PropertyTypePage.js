@@ -4,14 +4,14 @@ import { useState,useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import PropertyItem from "../components/PropertyItem";
 import PropertyPageItem from "../components/PropertyPageItem";
-
+import PropertyTypeContent from "../components/PropertyTypeContent";
 
 
 const PropertyTypePage = () => {
 
     
 // my state
-const [properties , setProperties] = useState({
+const [properties , setProperties] = useState([{
     id:0,
     type:"",
     title:"",
@@ -22,28 +22,17 @@ const [properties , setProperties] = useState({
     amenities:"",
     img : null,
     
-  });
+  }]);
 
 let params = useParams();
 
   useEffect(()=>{
-
     const URL ="http://localhost:5000/properties"
-    // AJAX request
-
-    fetch(URL)
-    .then((response)=>response.json())
-
-    .then(json=>{
-     
-
-      setProperties(json)
+    fetch(URL).then((response)=>response.json()).then((json) =>{
+        let a = json.filter((element)=>element.type===params.type)
+        setProperties(a);
     })
-    .catch((err)=>console.log(err));
-
   }, [])
-
-    
   
   return(
     <div className="grid" id="container">
@@ -51,19 +40,15 @@ let params = useParams();
         <main>
         <section id="section-property-list">
         <div className= "container">
-        
             <h1>Property Type : {params.type}</h1>
-
-            <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">
-            {properties.filter((property)=>{
-                if(property.type === params.type){
-                    return property;
-                }else{
-                    return null;
-                }
-            }).map((property)=>(<PropertyItem
-                id={property.id} key={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price} location={property.location} amenities={property.amenities} rules={property.Rules}/>))
-                }
+            {
+                properties.map((element)=>{
+                    return(
+                        <PropertyTypeContent id={element.id} key={element.id} type={element.type} title={element.title} bestSeller={element.bestSeller} image ={element.img} price={element.price} location={element.location} amenities={element.amenities} rules={element.Rules}/>
+                    )
+                })
+            }
+            <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">           
             </div>
           </div>
           </section>
@@ -72,6 +57,4 @@ let params = useParams();
     </div>
     )
 }
-
 export default PropertyTypePage
-// {properties.map(property=>( <PropertyPageItem id={property.id} key={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price} location={property.location} amenities={property.amenities} rules={property.rules} />))}

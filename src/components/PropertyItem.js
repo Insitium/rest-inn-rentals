@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PropertyItem = ({id, key, type, title,image,bestSeller,price,location,amenities, rules}) => {
+const PropertyItem = (props) => {
     
   return  (
     
     <div className="property-card">
     
        
-          <img  src={image} alt=""/>   
+          <img  src={props.image} alt=""/>   
       
 
       <div className="propertyContent">
-      <h3>{type}</h3>
-          <p>${price} per night</p>
-          <Link to = {`/property-type-page/${type}`}>
-          <a  className="blog-post__cta">Details</a></Link>
+      <h3>{props.type}</h3>
+          <p>${props.price} per night</p>
+          <Link className="blog-post__cta"to = {`/property-type-page/${props.type}`}>
+         Details</Link>
       </div>
       
   </div>
