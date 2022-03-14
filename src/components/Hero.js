@@ -10,7 +10,7 @@ import img5 from '../assets/img/five.jpg';
 
 const Hero = () => {
     return (
-        <Carousel className='carousel' >
+        <Carousel className='carousel hero' >
             <div>
                 <img src={img1} />
                 <p className="legend">Property 1</p>

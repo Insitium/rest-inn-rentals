@@ -2,8 +2,9 @@
 {
     width:1150px;
     width:80%;
-    margin:0 auto;
+    margin: auto;
 }
+
 .grid{
     display: grid;
 }
@@ -37,7 +38,9 @@
 {
     grid-template-rows: 50px auto 50px;
 }
-
+.grid-row-property-listing{
+    grid-template-rows: 10px;
+}
 .grid-col-4
 {
     grid-template-columns: repeat(4,1fr);

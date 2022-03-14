@@ -5,8 +5,8 @@ import PropertyType from '../components/PropertyType'
 import BestSellerList from '../components/BestSellerList'
 const HomePage = () => {
     return(
-        <div className="grid grid-row-3" id="main-container">
-            <Header/>
+        <div className="grid grid-row-3" >
+        <Header/>
             <main>
                 <Hero/>
                 <PropertyType/>

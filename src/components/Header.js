@@ -1,48 +1,48 @@
-import React from 'react';
-import {Link} from "react-router-dom";
-
-
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Button,Form, Nav,Navbar,Container,NavDropdown,FormControl } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
 
-
+    const submitCheck = (event) => {
+        event.preventDefault();
+      }
   return(
-  
-  <header>
-    <div className="container">
-    
-            <nav>
+      <div className='Container'>
+      <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="/"><h1>REST-INN    </h1></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '90px' }}
+            navbarScroll
+          >
+          <FormControl
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
             
-                <ul>
-                    <li><a className = "logo" href="/"><span>REST</span>-INN</a></li>
-                    <li><textarea className = "post-form-box"  name ="createPost" rows ="1" cols="50" ></textarea></li>
-                    <a className="header-icon">
-                    <li >
-                        <Link to="/vacation-properties">Vacation Properites</Link>
+          </Nav>
+          <Form className="d-flex">
             
-                       <button className="dropbtn">d</button>
-                    
-                    </li>
-                   
-                    </a>
-
-                    {/* <li>
-                        <Link to="/about">About</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/resorts">Resort Listing</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/registration">Registration</Link>
-                    </li> */}
-                </ul>
-            </nav>
-    </div>
-</header>)
+            <Nav.Link href="/property-listing">Vacation Properties</Nav.Link>
+            <Nav.Link href="#action2"></Nav.Link>
+            <NavDropdown title="" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/Signup">Sign up</NavDropdown.Item>
+              <NavDropdown.Item href="/Login">Log in</NavDropdown.Item>
+            </NavDropdown>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  </div>
+)
 };
 
 export default Header;

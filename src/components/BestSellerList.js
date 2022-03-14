@@ -9,6 +9,7 @@ const PropertyType = () => {
     id:0,
     type:"",
     title:"",
+    bestSeller:false,
     price: 0,
     imageSrc : null
   }]);

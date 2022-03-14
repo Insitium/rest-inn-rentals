@@ -12,7 +12,6 @@
         "featured" : true
       },
       { 
-
         "id" : 2,
         "type":"Resorts",
         "title" : "Blue Mountain",
@@ -84,7 +83,3 @@
 
     ]
 }
-
-
-
-
