@@ -10,6 +10,7 @@ import SignupPage from '../pages/SignupPage';
 import LoginPage from '../pages/LoginPage';
 import PropertyDetailsPage from '../pages/PropertyDetailsPage';
 import PropertyTypePage from '../pages/PropertyTypePage';
+import BestSellerPage from '../pages/BestSellerPage';
 
 import '../assets/css/App.css';
 import '../assets/css/utilities.css';
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/property/:id" element={<PropertyDetailsPage/>} />
         <Route path="/property-type-page/:type" element={<PropertyTypePage/>} />
+        <Route path="/best-seller" element={<BestSellerPage/>} />
       </Routes>
     </BrowserRouter>
   )

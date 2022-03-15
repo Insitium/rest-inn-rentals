@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropertyDetailsPage from '../pages/PropertyDetailsPage';
 
 const PropertyPageItem = ({id, key, type, title,image,bestSeller,price,location,amenities, rules}) => {
 

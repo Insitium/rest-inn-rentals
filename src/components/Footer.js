@@ -15,11 +15,11 @@ const Footer = () => {
             <div className='row'>
                 <div className='footer-col'>
                     <h4>More Links</h4>
-                    <ul><li><a href="/property-details">Details Page</a></li></ul>
+                    <ul><li><Link to="/property-listing">Details Page</Link></li></ul>
                 </div>
                 <div className='footer-col'>
                     <h4>About Us</h4>
-                    <ul><li><a href="/">Page</a></li></ul>
+                    <ul><li><Link to="/">Page</Link></li></ul>
                 </div>
                 <div className='footer-col'>
                     <h4>Follow Us</h4>

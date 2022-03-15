@@ -10,7 +10,7 @@ const Header = () => {
       <div className='Container'>
       <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/"><h1>REST-INN    </h1></Navbar.Brand>
+        <Navbar.Brand><Link to='/'><h1>REST-INN    </h1></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -29,11 +29,11 @@ const Header = () => {
           </Nav>
           <Form className="d-flex">
             
-            <Nav.Link href="/property-listing">Vacation Properties</Nav.Link>
-            <Nav.Link href="#action2"></Nav.Link>
+            <Nav.Link><Link to="/property-listing">Vacation Properties</Link></Nav.Link>
+            <Nav.Link ></Nav.Link>
             <NavDropdown title="" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/Signup">Sign up</NavDropdown.Item>
-              <NavDropdown.Item href="/Login">Log in</NavDropdown.Item>
+              <NavDropdown.Item><Link to ="/Signup">Sign up</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to='/Login'>Log in</Link></NavDropdown.Item>
             </NavDropdown>
           </Form>
         </Navbar.Collapse>

@@ -6,7 +6,7 @@ const PropertyTypeContent = ({id, key, type, title,image,bestSeller,price,locati
   return  (
     
     <div className="property-card">
-    
+    <Link to = {`/property/${id}`}>
        
           <img  src={image} alt="srgdvfh"/>   
       
@@ -16,6 +16,7 @@ const PropertyTypeContent = ({id, key, type, title,image,bestSeller,price,locati
           <p>{price} per night</p>
          
       </div>
+      </Link>
       
   </div>
 

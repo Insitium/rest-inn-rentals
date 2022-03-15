@@ -14,6 +14,8 @@ const PropertyItem = ({id, key, type, title,image,bestSeller,price,location,amen
       <div className="propertyContent">
           <h3>{title} property</h3>
           <p>${price} per night</p>
+          <Link className="blog-post__cta" to = {"/best-seller"}>
+         Details</Link>
           </div>
    
       
