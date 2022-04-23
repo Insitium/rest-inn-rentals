@@ -24,17 +24,17 @@ const Header = () => {
           className="me-2"
           aria-label="Search"
         />
-        <Button variant="outline-success">Search</Button>
+        <Link to={`/properties/title-type/{props.title}`}> <Button variant="outline-success"></Button></Link>
             
           </Nav>
           <Form className="d-flex">
-            
-            <Nav.Link><Link to="/property-listing">Vacation Properties</Link></Nav.Link>
+          <NavDropdown title="" id="navbarScrollingDropdown">
+          <NavDropdown.Item><Link to ="/Signup">Sign up</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link to='/Login'>Log in</Link></NavDropdown.Item>
+        </NavDropdown>
+            <Nav.Link><Link to="/properties">Vacation Properties</Link></Nav.Link>
             <Nav.Link ></Nav.Link>
-            <NavDropdown title="" id="navbarScrollingDropdown">
-              <NavDropdown.Item><Link to ="/Signup">Sign up</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to='/Login'>Log in</Link></NavDropdown.Item>
-            </NavDropdown>
+            
           </Form>
         </Navbar.Collapse>
       </Container>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PropertyPageItem = ({id, key, type, title,image,bestSeller,price,location,amenities, rules}) => {
+const PropertyPageItem = ({id, type, title,image,bestSeller,price,location,amenities, rules}) => {
 
 
   return  (
-    <div className="property-page-item">
+    <div className="">
     <div className="body-item">
     <div className="blog-post">
       <div className="blog-post__img">
@@ -27,7 +27,7 @@ const PropertyPageItem = ({id, key, type, title,image,bestSeller,price,location,
               <br/>
              
             </p>
-            <Link to = {`/property/${id}`}>
+            <Link to = {`/properties/${id}`}>
             <a  className="blog-post__cta">Details</a></Link>
         </div>
       </div>

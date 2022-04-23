@@ -12,12 +12,12 @@ const PropertyTypePage = () => {
     
 // my state
 const [properties , setProperties] = useState([{
-    id:0,
+    id:"",
     type:"",
     title:"",
     location:"",
     bestSeller:false,
-    price: 0,
+    price: "",
     Rules:"",
     amenities:"",
     img : null,
@@ -27,7 +27,7 @@ const [properties , setProperties] = useState([{
 let params = useParams();
 
   useEffect(()=>{
-    const URL ="http://localhost:5000/properties"
+    const URL ="http://localhost:8082/properties"
     fetch(URL).then((response)=>response.json()).then((json) =>{
         let a = json.filter((element)=>element.type===params.type)
         setProperties(a);
@@ -44,7 +44,7 @@ let params = useParams();
             {
                 properties.map((element)=>{
                     return(
-                        <PropertyTypeContent id={element.id} key={element.id} type={element.type} title={element.title} bestSeller={element.bestSeller} image ={element.img} price={element.price} location={element.location} amenities={element.amenities} rules={element.Rules}/>
+                        <PropertyTypeContent id={element.id} key={element.id} type={element.type} title={element.title} bestSeller={element.bestSeller} image ={element.img} price={element.price} location={element.location} amenities={element.amenities} rules={element.rules}/>
                     )
                 })
             }

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PropertyTypeContent = ({id, key, type, title,image,bestSeller,price,location,amenities, rules}) => {
+const PropertyTypeContent = ({id, type, title,image,bestSeller,price,location,amenities, rules}) => {
     
   return  (
     
     <div className="property-card">
-    <Link to = {`/property/${id}`}>
-       
+    <Link to = {`/properties/type`}>
+       <div>
           <img  src={image} alt="srgdvfh"/>   
-      
+          </div>
 
       <div className="propertyContent">
       <h3>{title}</h3>

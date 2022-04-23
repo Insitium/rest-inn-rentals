@@ -6,12 +6,12 @@ const PropertyType = () => {
 
   // my state
   const [properties , setProperties] = useState([{
-    id:0,
+    id:"",
     type:"",
     title:"",
     location:"",
     bestSeller:false,
-    price: 0,
+    price: "",
     imageSrc : null,
     rules:"",
     amenities:""
@@ -20,10 +20,10 @@ const PropertyType = () => {
 
   useEffect(()=>{
 
-    const URL = 'http://localhost:5000/properties'
+    const uri = 'http://localhost:8082/properties'
     // AJAX request
 
-    fetch(URL)
+    fetch(uri)
     .then(response=>response.json())
 
     .then(json=>{
@@ -43,9 +43,10 @@ const PropertyType = () => {
           <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">
           
           {properties.filter((property)=>{
-            return property.id<=4;
-        }).map(property=>( <PropertyItem id={property.id} key={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price} location={property.location} amenities={property.amenities} rules={property.rules} />))}
-          
+            return property;
+        }).map(property=>( <PropertyItem id={property.id} type={property.type} title={property.title} bestSeller={property.bestSeller} image ={property.img} price={property.price} location={property.location} amenities={property.amenities} rules={property.rules} />))}
+     
+
               
   
           </div>

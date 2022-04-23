@@ -14,7 +14,7 @@ const PropertyItem = (props) => {
       <div className="propertyContent">
       <h3>{props.type}</h3>
           <p>${props.price} per night</p>
-          <Link className="blog-post__cta"to = {`/property-type-page/${props.type}`}>
+          <Link className="blog-post__cta"to = {`/properties/title-type/${props.type}`}>
          Details</Link>
       </div>
       

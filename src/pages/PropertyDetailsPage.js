@@ -11,12 +11,12 @@ const PropertyDetailsPage = () => {
     
 // my state
 const [property , setProperty] = useState({
-    id:0,
+    id:"",
     type:"",
     title:"",
     location:"",
     bestSeller:false,
-    price: 0,
+    price: "",
     Rules:"",
     amenities:"",
     img : null,
@@ -27,7 +27,7 @@ const [property , setProperty] = useState({
 
   useEffect(()=>{
 
-    const URL =`http://localhost:5000/properties/${id}`
+    const URL =`http://localhost:8082/properties/${id}`
     // AJAX request
 
     fetch(URL)

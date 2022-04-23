@@ -16,16 +16,17 @@ import '../assets/css/App.css';
 import '../assets/css/utilities.css';
 
 const App = () => {
+  
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/property-listing" element={<PropertyListingPage/>} />
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/properties" element={<PropertyListingPage/>} />
         <Route path="/signup" element={<SignupPage/>} />
         <Route path="/login" element={<LoginPage/>} />
-        <Route path="/property/:id" element={<PropertyDetailsPage/>} />
-        <Route path="/property-type-page/:type" element={<PropertyTypePage/>} />
-        <Route path="/best-seller" element={<BestSellerPage/>} />
+        <Route path="/properties/:id" element={<PropertyDetailsPage/>} />
+        <Route path="/properties/title-type/:type" element={<PropertyTypePage/>} />
+        <Route path="/properties/bestSeller" element={<BestSellerPage/>} />
       </Routes>
     </BrowserRouter>
   )

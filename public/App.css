@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Rubik:wght@300&display=swap');
+*{
+  padding: 0px;
+  margin : 0px;
+  font-family: 'Rubik', sans-serif;
+   box-sizing: border-box;
+}
+.listing p{
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  
+}
+.listing div h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+.listing div{
+  text-align: center;
+}
+.listing div img{
+  transform: translateX(-10rem);
+  width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border-color: black;
+}

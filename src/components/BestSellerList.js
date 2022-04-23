@@ -6,12 +6,12 @@ const PropertyType = () => {
 
   // my state
   const [properties , setProperties] = useState([{
-    id:0,
+    id:"",
     type:"",
     title:"",
     location:"",
     bestSeller:false,
-    price: 0,
+    price: "",
     imageSrc : null,
     rules:"",
     amenities:""
@@ -20,10 +20,10 @@ const PropertyType = () => {
 
   useEffect(()=>{
 
-    const URL = 'http://localhost:5000/properties'
+    const uri = 'http://localhost:8082/properties'
     // AJAX request
 
-    fetch(URL)
+    fetch(uri)
     .then(response=>response.json())
 
     .then(json=>{
